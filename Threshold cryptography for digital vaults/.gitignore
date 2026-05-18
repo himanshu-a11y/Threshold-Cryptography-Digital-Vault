@@ -1,0 +1,62 @@
+# =============================================
+#   .gitignore for Threshold Digital Vault
+#   Python + Flask Project
+# =============================================
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# --- Virtual Environments ---
+venv/
+.venv/
+env/
+ENV/
+.env
+
+# --- Environment Variables & Secrets ---
+.env
+.env.*
+*.env
+secrets.json
+
+# --- Flask / Runtime ---
+instance/
+flask_session/
+
+# --- Vault Data (sensitive - contains encrypted secrets) ---
+vault_data.json
+
+# --- Distribution / Build ---
+build/
+dist/
+*.egg-info/
+*.egg
+MANIFEST
+
+# --- Testing ---
+.pytest_cache/
+.coverage
+htmlcov/
+*.log
+
+# --- IDE & Editor Files ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Jupyter (if ever used) ---
+.ipynb_checkpoints/
+
+# --- PDF (large binary, optional to include) ---
+# Uncomment if you do NOT want to push the project PDF to GitHub:
+# *.pdf
